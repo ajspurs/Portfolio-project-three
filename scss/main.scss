@@ -1,0 +1,165 @@
+
+
+// Colors 
+$text-grey: rgb(136, 136, 136);
+$text-light-grey: rgb(197, 197, 197);
+$warning: #EAB95F;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato';
+}
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.jumbotron {
+    background-image: linear-gradient(rgba(31, 31, 31, 0.438),rgba(31, 31, 31, 0.438)), url('https://images6.alphacoders.com/412/412086.jpg');
+    background-size: cover;
+    height: 650px;
+    margin-bottom: 0rem;
+    h1 {
+        font-size: 65px;
+        text-transform: uppercase;
+    }
+}
+
+
+
+.contact-container {
+    padding-bottom: 0rem;
+    background-color: black;
+    p{
+        color: rgb(136, 136, 136);
+    }
+}
+
+.contact-section {
+    width: 100%;
+    padding: 30px 0;
+}
+
+.social-media-section {
+    width: 100%;
+    padding: 10px 0;
+    @media (min-width: 768px) {
+        width: 35%;
+        padding: 0;
+    }
+}
+
+.half-img-left {
+    background-image: linear-gradient(rgba(31, 31, 31, 0.438),rgba(31, 31, 31, 0.103)), url('/img/Russos-New-York-Pizzeria-Rolls-Out-Next-Generation-Pizza-Italian-Restaurant-Design-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.half-img-right {
+    background-image: url('/img/68305.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.welcome-text {
+    color: rgb(136, 136, 136);
+    line-height: 1.4;
+    font-size: 15px;
+    @media (min-width: 400px) {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    @media (min-width: 768px) {
+        line-height: 1.5;
+        font-size: 15px;
+    }
+}
+
+.fa-instagram,
+.fa-twitter,
+.fa-facebook {
+    cursor: pointer;
+}
+
+.fa-carrot,
+.fa-bicycle,
+.fa-pizza-slice {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.fa-bicycle {
+    animation-delay: 0.2s;
+}
+.fa-pizza-slice {
+    animation-delay: 0.4s;
+}
+
+.fa-carrot:hover,
+.fa-bicycle:hover,
+.fa-pizza-slice:hover {
+    transform: rotate(145deg);
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.price {
+    margin-right: 50%;
+}
+
+.menu-meal-name {
+    border-bottom: 1px dashed #e4aa0b;
+}
+
+.menu-section {
+    background-image: url('/img/68305.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    h5 {
+        color: $text-light-grey;
+        font-size: 95%;
+    }
+    p {
+        color: $text-grey;
+        font-size: 90%;
+    }
+    span {
+        color: $warning;
+    }
+}
+
+.gallery-img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    opacity: 0.9;
+    transition: transform 0.8s, opacity 0.5s;
+    &:hover {
+        transform: scale(1.01);
+        opacity: 1;
+    }
+}
+
+
+
+.gallery-row {
+    margin: 0;
+}
+
+.contact-form-section, .contact-form {
+    background-color: rgb(29, 29, 29);
+    color: $text-light-grey;
+    border: none;
+}
+
+footer {
+    background-color: rgb(19, 19, 19);
+}
